@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 5, Time elapsed: 46.863 s <<< FAILURE! - in TestSuite
+tests.Ninja.openApplication  Time elapsed: 23.66 s  <<< FAILURE!
+java.lang.NullPointerException
+	at tests.Ninja.openApplication(Ninja.java:73)
+
+tests.RegisterAccount.createaccount[firstNameTest, LastNameTest, emailtest@email.com, 7797777777, pass@123, pass@123](1)  Time elapsed: 10.389 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='My Account']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A1ON5EUR', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\TUSHAA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 88315580aec0f74c8fc3c5b17b3b1204
+*** Element info: {Using=xpath, value=//a[@title='My Account']}
+	at tests.RegisterAccount.createaccount(RegisterAccount.java:26)
+
+tests.RegisterAccount.createaccount[firstNameTest1, LastNameTest1, emailtest1@email.com, 7797777777, pass@123, pass@123](2)  Time elapsed: 1.423 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="http://tutorialsninja.com/demo/index.php?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (984, 19). Other element would receive the click: <a dont="" style="top: 0px; left: 0px; width: 1536px; height: 710px; position: absolute; z-index: 2147483647;"></a>
+  (Session info: chrome=93.0.4577.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A1ON5EUR', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\TUSHAA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b55a986ff28b8ebfff8ba7a6e120bc
+	at tests.RegisterAccount.createaccount(RegisterAccount.java:26)
+
+tests.RegisterAccount.teardown  Time elapsed: 1.951 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A1ON5EUR', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\TUSHAA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b55a986ff28b8ebfff8ba7a6e120bc
+	at tests.RegisterAccount.teardown(RegisterAccount.java:54)
+
